@@ -30,6 +30,22 @@ const crearCurso = async() => {
 //crearCurso();
 
 const listarCursos = async() => {
+    //Operadores de comparacion
+    //eq (equal,igual)
+    //ne (not equal,no igual)
+    //gt (greater than, mayor que)
+    //gte (greater than or equal to, mayor o igual que)
+    //lt (less than, menor que)
+    //lte (less than or equal to, menor o igual que)
+    //in ( indicar si hay valores o varios en una consulta especifica)
+    //nin (not in, no esta en)
+    // const cursos = await Curso
+    //     .find({precio: {$gte:10, $lte:30}})
+    //     .find({precio: {$in: [10,15,25]}})
+    //     .limit(10)
+    //     .sort({autor : 1})//1 ascendente , -1 descendente
+    //     .select({nombre : 1, etiquetas : 1});//Con 1 las muestra
+    // console.log(cursos);
     const cursos = await Curso
         .find({nombre : 'Curso de Java'})
         .limit(10)
