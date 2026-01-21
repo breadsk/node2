@@ -100,4 +100,13 @@ const actualizarCurso = async(id) => {
 //     console.log(resultado);
 // }
 
-actualizarCurso('697006ef27e80e662782b295');
+//actualizarCurso('697006ef27e80e662782b295');
+
+const eliminarDocumento = async(id) => {
+
+    const result = await Curso.deleteOne({_id: id});
+    //const result = await Curso.findByIdAndDelete(id);
+    console.log(result);
+}
+
+eliminarDocumento('697006ef27e80e662782b295');
